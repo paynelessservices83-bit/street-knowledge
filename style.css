@@ -126,3 +126,7 @@ textarea.txt{resize:vertical;font-family:inherit}
 .msg .mh{font-size:11px;opacity:.75;display:flex;gap:6px;align-items:center}
 .msg .mh button{font-size:11px;background:none;border:0;color:inherit;opacity:.7;padding:0;cursor:pointer}
 .chat-input{display:flex;gap:6px}.chat-input .txt{flex:1}
+/* QA fix proposal: keep floating buttons clear of the search bar when the route sheet is open, and enlarge close buttons */
+body.sheet-open #darkBtn,body.sheet-open #simBtn:not(.active),body.sheet-open #pinBtn{display:none}
+@media (max-height:700px){body.sheet-open #friendsBtn,body.sheet-open #compassBtn{display:none}}
+.xbtn{min-width:44px;min-height:44px}
